@@ -65,7 +65,7 @@ public class OpenTracingTest {
       span.close();
 
 
-      Map<String, String> context = new HashMap<>();
+      Map<String, String> context = new HashMap<String, String>();
       tracer.inject(
           span.context(),
           Format.Builtin.TEXT_MAP,
